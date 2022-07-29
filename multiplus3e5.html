@@ -1,0 +1,37 @@
+<html>
+    <script>
+        function verificaDivisivel(numero) {
+            //true -> o numero é divisivel por 3 ou 5
+            //false -> o numero não é divisivel por 3 ou 5
+            if (numero % 3 === 0 || numero % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var soma = 0
+        var lista = [];
+
+        for (var i = 3; i <= 999; i++) {
+            if (verificaDivisivel(i)) {
+                soma = soma + i;
+                lista.push(i);
+            }    
+        }
+        
+        /*var i = 3;
+
+        while (i <= 999) {
+            if (verificaDivisivel(i)) {
+                soma = soma + i;
+                lista.push(i);
+            }
+                i++;
+        }*/
+
+        
+        console.log(soma);
+        console.log(lista);
+    </script>
+</html>

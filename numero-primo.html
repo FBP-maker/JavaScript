@@ -1,0 +1,24 @@
+<html>
+    <script>
+        //1- Crie a função que recebe o numero como parametro
+        //2- Dentro dela crie uma estrutura de repetição que verifique algum numero menor q o parametro que seja divisivel pelo parametro.
+        //3- Diga se é primo ou não.
+        
+        function verificaNumeroPrimo(numero) {
+             if (numero === 2) {
+                console.log("'O númeno", numero, "é primo.'");
+             }         
+        for (var i = 2; i < numero ; i++) {         
+            if (numero % i === 0) {
+                console.log("'O número", numero, "não é primo.'");
+                break;
+            } else {
+                console.log("'O númeno", numero, "é primo.'");
+            } 
+        } 
+        }                      
+            
+               
+    </script>
+</html>
+
