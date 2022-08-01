@@ -5,17 +5,18 @@
         //3- Diga se é primo ou não.
         
         function verificaNumeroPrimo(numero) {
-             if (numero === 2) {
-                console.log("'O númeno", numero, "é primo.'");
-             }         
+             var primo = true;
         for (var i = 2; i < numero ; i++) {         
             if (numero % i === 0) {
-                console.log("'O número", numero, "não é primo.'");
+                primo = false;
                 break;
-            } else {
-                console.log("'O númeno", numero, "é primo.'");
             } 
         } 
+            if ( primo == false) {
+                console.log(`O número ${numero} não é primo.`);
+            } else {
+                console.log(`O número ${numero} é primo.`);
+            }
         }                      
             
                
